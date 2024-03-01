@@ -1,4 +1,19 @@
-.login-screen {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+    -webkit-text-fill-color: #b6b6b6 !important;
+}
+
+.main-content-container {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -10,10 +25,10 @@
     background-color: #181818;
 }
 
-p.text-wrapper {
+h1.title {
     position: relative;
-    width: 404px;
-    height: 90px;
+    width: 400px;
+    height: fit-content;
     font-family: "Open Sans-Regular", Helvetica;
     font-weight: 400;
     color: #e2e2e2;
