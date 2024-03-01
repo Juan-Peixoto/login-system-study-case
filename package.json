@@ -1,0 +1,18 @@
+{
+  "name": "login-system-study-case",
+  "version": "1.0.0",
+  "description": "Just for practice and study.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": ["Login-system", "Javascript-Stack", "NodeJS", "ExpressJS", "PostgreSQL"],
+  "author": "Juan Peixoto (JP)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
