@@ -126,6 +126,16 @@ div .input {
     }
 }
 
+.logout-button {
+    background-color: #FF6F50;
+    color: #272727;
+
+    &:hover {
+        background-color: #ff4318;
+        color: #080808;
+    }
+}
+
 p.registration-link {
     position: relative;
     width: fit-content;

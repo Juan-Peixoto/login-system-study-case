@@ -14,6 +14,10 @@ app.get('/signup', (req, res) => {
     res.sendFile(path.join(projectFolder, "views", "signup.html"))
 })
 
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(projectFolder, "views", "home.html"))
+})
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost${port}/`)
 })
