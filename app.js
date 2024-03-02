@@ -5,17 +5,18 @@ const port = 3000
 const projectFolder = __dirname
 
 app.use(express.static(path.join(projectFolder, 'public')))
+app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(projectFolder, "views", "login.html"))
+    res.render("login")
 })
 
 app.get('/signup', (req, res) => {
-    res.sendFile(path.join(projectFolder, "views", "signup.html"))
+    res.render("signup")
 })
 
 app.get('/home', (req, res) => {
-    res.sendFile(path.join(projectFolder, "views", "home.html"))
+    res.render("home")
 })
 
 app.listen(port, () => {

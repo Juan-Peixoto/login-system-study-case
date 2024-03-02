@@ -6,13 +6,20 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": ["Login-system", "Javascript-Stack", "NodeJS", "ExpressJS", "PostgreSQL"],
+  "keywords": [
+    "Login-system",
+    "Javascript-Stack",
+    "NodeJS",
+    "ExpressJS",
+    "PostgreSQL"
+  ],
   "author": "Juan Peixoto (JP)",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.1.0"
   },
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.3"
   }
 }
