@@ -8,15 +8,18 @@ app.use(express.static(path.join(projectFolder, 'public')))
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-    res.render("login")
+    const pageTitle = 'Login page'
+    res.render("login", {pageTitle})
 })
 
 app.get('/signup', (req, res) => {
-    res.render("signup")
+    const pageTitle = 'Registration page'
+    res.render("signup", {pageTitle})
 })
 
 app.get('/home', (req, res) => {
-    res.render("home")
+    const pageTitle = 'Home page'
+    res.render("home", {pageTitle})
 })
 
 app.listen(port, () => {
