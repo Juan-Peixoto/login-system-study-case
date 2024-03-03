@@ -4,29 +4,22 @@
     <%- include('head.ejs') %>
 
     <body>
-        <main class="main-content-container">
-            <h1 class="title">Resgistration page</h1>
+        <main>
+            <h1>Resgistration page</h1>
 
-            <form method="post" class="login-form" action="">
-                <div class="form-field">
-                    <img class="icon" src="/images/user.png" />
-                    <input class="input" type="text" name="username" id="username" placeholder="Enter your username"
-                        autocomplete="username" required>
-                </div>
+            <form method="post" action="">
+                
+                <%- include('user-form-field.ejs') %>
 
-                <div class="form-field">
-                    <img class="icon" src="/images/lock.png" />
-                    <input class="input" type="password" name="password" id="password" placeholder="Type your password"
-                        autocomplete="off" required>
-                </div>
+                <%- include('password-form-field.ejs') %>
 
-                <div class="form-field">
-                    <img class="icon" src="/images/lock.png" />
+                <fieldset>
+                    <img src="/images/lock.png" />
                     <input class="input" type="password" name="password" id="password"
                         placeholder="Repeat your password" autocomplete="off" required>
-                </div>
+                </fieldset>
 
-                <button type="submit" class="button">ENTER</button>
+                <button type="submit">ENTER</button>
             </form>
         </main>
     </body>

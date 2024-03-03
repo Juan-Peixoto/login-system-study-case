@@ -13,7 +13,7 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #b6b6b6 !important;
 }
 
-.main-content-container {
+main {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -25,7 +25,7 @@ input:-webkit-autofill:active {
     background-color: #181818;
 }
 
-h1.title {
+h1 {
     position: relative;
     width: 400px;
     height: fit-content;
@@ -38,7 +38,7 @@ h1.title {
     line-height: normal;
 }
 
-form.login-form {
+form {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +48,7 @@ form.login-form {
     flex: 0 0 auto;
 }
 
-div.form-field {
+fieldset {
     display: flex;
     width: 335px;
     height: 50px;
@@ -63,19 +63,13 @@ div.form-field {
     border-color: #b6b6b6;
 }
 
-img.icon {
+img {
     position: relative;
     width: 20px;
     height: 20px;
 }
 
-img.password-hider:hover {
-    cursor: pointer;
-    border: 0.5px solid rgb(190, 190, 190);
-    border-radius: 5px;
-}
-
-div .input {
+input {
     position: relative;
     flex: 1;
     height: 80%;
@@ -99,7 +93,7 @@ div .input {
     }
 }
 
-.button {
+button {
     display: flex;
     width: 250px;
     height: 44px;
@@ -136,7 +130,7 @@ div .input {
     }
 }
 
-p.registration-link {
+p {
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -147,7 +141,7 @@ p.registration-link {
     color: #b6b6b6;
 }
 
-a.link {
+a {
     font-family: "Open Sans-SemiBold", Helvetica;
     font-weight: 600;
     color: #f07d00;

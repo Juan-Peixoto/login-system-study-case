@@ -4,26 +4,19 @@
   <%- include('head.ejs') %>
 
   <body>
-    <main class="main-content-container">
-      <h1 class="title">Login system with data processing, security and persistence</h1>
+    <main>
+      <h1>Login system with data processing, security and persistence</h1>
 
-      <form method="post" class="login-form" action="">
-        <div class="form-field">
-          <img class="icon" src="/images/user.png" />
-          <input class="input" type="text" name="username" id="username" placeholder="Enter your username"
-            autocomplete="username" required>
-        </div>
+      <form method="post" action="">
 
-        <div class="form-field">
-          <img class="icon" src="/images/lock.png" />
-          <input class="input" type="password" name="password" id="password" placeholder="Type your password"
-            autocomplete="off" required>
-        </div>
+        <%- include('user-form-field.ejs') %>
 
-        <button type="submit" class="button">ENTER</button>
+        <%- include('password-form-field.ejs') %>
+
+        <button type="submit">ENTER</button>
       </form>
 
-      <p class="registration-link">Or <a href="/signup" target="_self" class="link">SIGNUP</a></p>
+      <p>Or <a href="/signup" target="_self">SIGNUP</a></p>
     </main>
   </body>
 
